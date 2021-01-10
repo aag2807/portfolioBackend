@@ -186,25 +186,6 @@ export const projects: IProject[] = [
 	},
 
 	{
-		id: 8,
-		category: 'back',
-		title: 'NestJS Api',
-		btnColor: 'red darken-2',
-		subtitle: `<p> Where do you think this is coming from?</p>
-            made with:<br />`,
-		chips: [
-			{
-				colors: 'red darken-2',
-				title: 'Nest.js'
-			},
-			{
-				colors: 'blue darken-1',
-				title: 'Typescript'
-			},
-		]
-	},
-
-	{
 		id: 9,
 		category: 'back',
 		title: 'NestJS Api',
@@ -243,26 +224,6 @@ export const projects: IProject[] = [
 			{
 				colors: 'green darken-2',
 				title: 'Node.js'
-			},
-		]
-	},
-
-	{
-		id: 11,
-		category: 'back',
-		title: 'Haskell Api',
-		btnColor: 'light-blue darken-4',
-		subtitle: `<p>A simple Api using snap</p>
-			<br/>
-			made with:<br/>`,
-		chips: [
-			{
-				colors: 'light-blue darken-3',
-				title: 'Snap'
-			},
-			{
-				colors: 'grey darken-1',
-				title: 'Snap Templates'
 			},
 		]
 	},
@@ -326,37 +287,30 @@ export const projects: IProject[] = [
 export const myInfo = [
 	{
 		id: 1,
-		overlay: 'Me',
-		title: 'About Me',
+		overlay: 'About',
+		title: 'Me',
 		content: `My name is Alvaro Guzman,
              I'm a self taught Software Developer, I'm currenyly located in Dominican Republic. <br>
              I plainly just love coding and enjoy a good challenge, Game Dev hobbiest  👾.
-             <br>
-             Whenever a new tech hits mainstream I'm already investigating and doing something with it.
-            `,
+						 passionate reader!.
+						 `,
 	},
 	{
 		id: 2,
-		overlay: 'Front Dev',
-		title: 'Front-End',
+		overlay: 'Front-End',
+		title: 'Front',
 		content: `I'm a self-proclaimed hardcore Javascript lover,
             name a front-end framework/library and rest assured I've used the technology.
-            <br>
             From Vanilla JS to React, Svelte, Angular, Vue or even GopherJs, gotta love that pixel perfect finish 👨‍💻 .
             `,
 	},
 	{
 		id: 3,
-		overlay: 'Back dev',
-		title: 'Back-End',
+		overlay: 'Back-End',
+		title: 'Back',
 		content: `I might be partial about my love for JS, but I never limit myself to a single framework, library or even Language.
             Those technologys that have a soft spot in my heart are:
-              <ul>
-                <li>Rust</li>
-                <li>Golang</li>
-                <li>Haskell</li>
-                <li>Ruby</li>
-              </ul>
+            Rust, Golang, Haskell, Ruby.
               If I continue the list it wont fit...
             `,
 	},

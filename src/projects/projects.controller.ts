@@ -30,13 +30,11 @@ export class ProjectsController {
   }
 
 
-
   @Get(':id')
   getProject(@Param() params): IProject[] {
     console.log('get a single project', params.id);
     return this.projectsService.getProjects().filter((p) => p.id == params.id);
   }
-
 
 
   @Post()
