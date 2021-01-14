@@ -1,18 +1,18 @@
 import {
-    Controller,
-    Get,
-    Param,
-    Post,
-    Body,
-    Put,
-    Delete,
-  } from '@nestjs/common';
+  Controller,
+  Get,
+  Param,
+  Post,
+  Body,
+  Put,
+  Delete,
+} from '@nestjs/common';
 import { IProject } from 'src/shared/ shared';
 import { ProjectsService } from './projects.service';
 
 @Controller('projects')
 export class ProjectsController {
-    constructor(private projectsService: ProjectsService) {}
+  constructor(private projectsService: ProjectsService) {}
 
   @Get()
   getProjects(): IProject[] {
@@ -20,22 +20,20 @@ export class ProjectsController {
   }
 
   @Get('front')
-  getFrontProjects(){
-      return this.projectsService.getFrontendProjects()
+  getFrontProjects() {
+    return this.projectsService.getFrontendProjects();
   }
 
   @Get('back')
-  getBackProjects(){
-      return this.projectsService.getBackedProjects()
+  getBackProjects() {
+    return this.projectsService.getBackedProjects();
   }
-
 
   @Get(':id')
   getProject(@Param() params): IProject[] {
     console.log('get a single project', params.id);
     return this.projectsService.getProjects().filter((p) => p.id == params.id);
   }
-
 
   @Post()
   createProduct(@Body() project: IProject) {
